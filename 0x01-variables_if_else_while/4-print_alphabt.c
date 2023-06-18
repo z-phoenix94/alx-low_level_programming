@@ -19,9 +19,9 @@ int main(void)
 		if ((n != 101) && (n != 113))
 		{
 			putchar(p);
-			n++;
-			p++;
 		}
+		n++;
+		p++;
 
 		if (n > 122)
 		{
