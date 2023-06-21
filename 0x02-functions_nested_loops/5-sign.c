@@ -2,10 +2,10 @@
 
 /**
  * print_sign - Entry point
- * 
+ *
  * Description: print th sign of a number
  * @n: number to be checked
- * 
+ *
  * Return: 1 if positive, -1 if negative, 0 otherwise
  */
 
