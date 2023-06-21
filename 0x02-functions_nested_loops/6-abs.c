@@ -4,7 +4,7 @@
  * _abs - Entry point
  *
  * Description: computes absolute value of an integer
- * @int: integer to be checked
+ * @n: integer to be checked
  * Return: Absolute value of the given integer (Success)
  */
 
