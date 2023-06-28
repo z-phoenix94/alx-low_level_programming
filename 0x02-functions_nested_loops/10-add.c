@@ -4,8 +4,8 @@
  * add - Entry point
  *
  * Description: prints the sum of two integ
- * @int: integer to be added
- * @int: integer to be added
+ * @a: integer to be added
+ * @b: integer to be added
  *
  * Return: sum of two integers
  */
