@@ -5,21 +5,22 @@
  *
  * Description: prints lowercase letters 10x
  *
- * Return: Always 0 (Success)
+ * Return: nothing
  */
 void print_alphabet_x10(void)
 {
 	int j;
-	char c = 'a';
+	char  c;
 
-	while (j < 10)
+	for (j = 0; j < 10; j++)
 	{
+		c = 'a';
+
 		while (c <= 'z')
 		{
 			_putchar(c);
 			c++;
 		}
-		j++;
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
