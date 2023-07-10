@@ -12,7 +12,7 @@
 
 int main(int argc, char __attribute__((unused))*argv[])
 {
-	int i, total= 0;
+	int i, total = 0;
 
 	for (i = 1; i < argc; i++)
 	{
