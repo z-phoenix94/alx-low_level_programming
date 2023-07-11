@@ -18,17 +18,17 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j;
 	char *catstring = NULL;
 
-	if (s1 == 0 && s2 == 0)
-	{
-		return (NULL);
-	}
-	if (s1 != 0 && s2 == 0)
+	if ((s1 != 0 && s2 == 0) || (s1 != 0 && s2 == NULL))
 	{
 		return (s1);
 	}
-	if (s1 == 0 && s2 != 0)
+	if ((s1 == 0 && s2 != 0) || (s1 == NULL && s2 != 0))
 	{
 		return (s2);
+	}
+	if (s1 == NULL && s2 == NULL)
+	{
+		return "";
 	}
 	if (s1 != 0 && s2 != 0)
 	{
@@ -44,6 +44,10 @@ char *str_concat(char *s1, char *s2)
 			{
 				catstring[(strlen(s1) + j)] = s2[j];
 			}
+		}
+		if (catstring == NULL)
+		{
+			return (NULL);
 		}
 	}
 	return (catstring);
