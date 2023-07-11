@@ -18,37 +18,32 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j;
 	char *catstring = NULL;
 
-	if ((s1 != 0 && s2 == 0) || (s1 != 0 && s2 == NULL))
+	if (s1 == NULL)
 	{
-		return (s1);
+		s1 = "";
 	}
-	if ((s1 == 0 && s2 != 0) || (s1 == NULL && s2 != 0))
-	{
-		return (s2);
-	}
-	if (s1 == NULL && s2 == NULL)
-	{
-		return "";
-	}
-	if (s1 != 0 && s2 != 0)
-	{
-		catstring = (char *) malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
 
-		if (catstring != NULL)
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+
+	catstring = (char *) malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
+
+	if (catstring != NULL)
+	{
+		for (i = 0; i < strlen(s1); i++)
 		{
-			for (i = 0; i < strlen(s1); i++)
-			{
-				catstring[i] = s1[i];
-			}
-			for (j = 0; j < strlen(s2); j++)
-			{
-				catstring[(strlen(s1) + j)] = s2[j];
-			}
+			catstring[i] = s1[i];
 		}
-		if (catstring == NULL)
+		for (j = 0; j < strlen(s2); j++)
 		{
-			return (NULL);
+			catstring[(strlen(s1) + j)] = s2[j];
 		}
+	}
+	if (catstring == NULL)
+	{
+		return (NULL);
 	}
 	return (catstring);
 }
