@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) >= 0)
+		if (atoi(argv[i]))
 		{
 			sum += atoi(argv[i]);
 		}
