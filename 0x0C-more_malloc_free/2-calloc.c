@@ -8,7 +8,8 @@
  *
  * Description: allocates memory for an array of
  * nmemb elements of size bytes each
- * @nmemb: describe the parameter
+ * @nmemb: array elements
+ * @size: size of each element in the array
  *
  * Return: pointer to the allocated memory or NULL
  */
