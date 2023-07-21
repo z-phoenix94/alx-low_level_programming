@@ -1,12 +1,13 @@
 #include "3-calc.h"
 
 /**
- * main - Entry point
- * 
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * 
- * Return: Always 0 (Success)
+ * op_add - Entry point
+ *
+ * Description: add to integers
+ * @a: first parameter
+ * @b: second parameter
+ *
+ * Return: sum of the two numbers
  */
 
 int op_add(int a, int b)
@@ -15,57 +16,61 @@ int op_add(int a, int b)
 }
 
 /**
- * main - Entry point
+ * op_sub - Entry point
  *
- * Description: 'the program's description'
- * @parameter: describe the parameter
+ * Description: calculates the differenc
+ * @a: first parameter
+ * @b: second argument
  *
- * Return: Always 0 (Success)
+ * Return: differnce of the two numbers
  */
 
 int op_sub(int a, int b)
 {
-        return (a - b);
+	return (a - b);
 }
 
 /**
- * main - Entry point
+ * op_mul- Entry point
  *
- * Description: 'the program's description'
- * @parameter: describe the parameter
+ * Description: calcultes the product
+ * @a: first argument
+ * @b: second argument
  *
- * Return: Always 0 (Success)
+ * Return: product of two numbers
  */
 
 int op_mul(int a, int b)
 {
-        return (a * b);
+	return (a * b);
 }
 
 /**
- * main - Entry point
+ * op_div - Entry point
  *
- * Description: 'the program's description'
- * @parameter: describe the parameter
+ * Description: divids a by b
+ * @a: first argument
+ * @b: second argument
  *
- * Return: Always 0 (Success)
+ * Return: quotient
  */
 
 int op_div(int a, int b)
 {
-        return (a / b);
+	return (a / b);
 }
 
 /**
- * main - Entry point
+ * op_mod - Entry point
  *
- * Description: 'the program's description'
- * @parameter: describe the parameter
+ * Description: calculates modulus of a
+ * @a: first argument
+ * @b: second argument
  *
- * Return: Always 0 (Success)
+ * Return: remainder of a divided by b
  */
 
 int op_mod(int a, int b)
 {
-        return (a % b);
+	return (a % b);
 }
