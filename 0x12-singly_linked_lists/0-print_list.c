@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * print_list - prints elements of a singly  linked list
+ * print_list - Entry point
+ * description: prints elements of a singly linked list
  * @h: pointer to struct node
  *
  * Return: number of nodes
