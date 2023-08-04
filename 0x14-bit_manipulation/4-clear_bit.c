@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * clear - sets value of bit 0 to a given index
+ * clear_bit - sets value of bit 0 to a given index
  * @n: pointer to unsigned long int number
  * @index: index of a binary
  *
